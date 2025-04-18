@@ -17,7 +17,7 @@ public class PizzaGUIFrame extends JFrame {
 
     public PizzaGUIFrame() {
         setTitle("Pizza Order Form");
-        setSize(600, 500);
+        setSize(700, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
@@ -124,7 +124,7 @@ public class PizzaGUIFrame extends JFrame {
 
 
             StringBuilder receipt = new StringBuilder();
-            receipt.append("-----------------------------------------\n");
+            receipt.append("=========================================\n");
             receipt.append("** Type of Crust & Size: ").append(crust).append(" / ").append(size).append(" **\n");
             receipt.append(String.format("Base Price: $%.2f\n", basePrice));
             receipt.append("** Toppings:\n").append(toppingsList);
@@ -132,7 +132,7 @@ public class PizzaGUIFrame extends JFrame {
             receipt.append("=========================================\n");
             receipt.append(String.format("Sub-total: $%.2f\n", subtotal));
             receipt.append(String.format("Tax: $%.2f\n", tax));
-            receipt.append("=========================================\n");
+            receipt.append("-----------------------------------------\n");
             receipt.append(String.format("** Total: $%.2f **\n", total));
             receipt.append("=========================================\n");
 
