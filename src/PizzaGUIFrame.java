@@ -133,7 +133,7 @@ public class PizzaGUIFrame extends JFrame {
             receipt.append(String.format("Sub-total: $%.2f\n", subtotal));
             receipt.append(String.format("Tax: $%.2f\n", tax));
             receipt.append("-----------------------------------------\n");
-            receipt.append(String.format("** Total: $%.2f **\n", total));
+            receipt.append(String.format("Total: $%.2f\n", total));
             receipt.append("=========================================\n");
 
             orderArea.setText(receipt.toString());
