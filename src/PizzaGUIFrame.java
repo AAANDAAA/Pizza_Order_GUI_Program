@@ -43,7 +43,7 @@ public class PizzaGUIFrame extends JFrame {
         JPanel toppingPanel = new JPanel();
         toppingPanel.setBorder(new TitledBorder("Choose Toppings"));
         toppingPanel.setLayout(new GridLayout(3, 2));
-        String[] toppingNames = {"Eyeballs", "Spicy Worms", "Anchovies", "Ghost Peppers", "Bat Wings", "Zombie Sausage"};
+        String[] toppingNames = {"Donkey", "Vimp", "Blood", "teeth", "Human", "Cheese"};
         toppings = new JCheckBox[toppingNames.length];
         for (int i = 0; i < toppingNames.length; i++) {
             toppings[i] = new JCheckBox(toppingNames[i]);
